@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralReel AI - Automated Video Creator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="title">ViralReel AI</h1>
+            <p class="subtitle">Transform your ideas into viral short-form videos</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="card">
+                    <h2>Create Your Video</h2>
+                    <form id="videoForm">
+                        <div class="form-group">
+                            <label for="topic">Enter your topic, article link, or text:</label>
+                            <textarea
+                                id="topic"
+                                name="topic"
+                                rows="6"
+                                placeholder="Example: 'The future of artificial intelligence' or paste an article link..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" id="generateBtn" class="btn btn-primary">
+                            <span class="btn-text">Generate Video</span>
+                            <span class="loader" style="display: none;"></span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Status Section -->
+            <section class="status-section" id="statusSection" style="display: none;">
+                <div class="card status-card">
+                    <h3>Generation Progress</h3>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                    <p class="status-message" id="statusMessage">Initializing...</p>
+                </div>
+            </section>
+
+            <!-- Video Output Section -->
+            <section class="output-section" id="outputSection" style="display: none;">
+                <div class="card">
+                    <h2>Your Generated Video</h2>
+                    <div class="video-container">
+                        <video id="generatedVideo" controls>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-actions">
+                        <button id="downloadBtn" class="btn btn-secondary">Download Video</button>
+                        <button id="createNewBtn" class="btn btn-outline">Create Another</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section class="error-section" id="errorSection" style="display: none;">
+                <div class="card error-card">
+                    <h3>Oops! Something went wrong</h3>
+                    <p class="error-message" id="errorMessage"></p>
+                    <button id="retryBtn" class="btn btn-primary">Try Again</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 ViralReel AI. Powered by OpenAI, ElevenLabs, and RunwayML.</p>
+        </footer>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
