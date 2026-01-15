@@ -29,6 +29,7 @@ wheels/
 # Temporary files
 temp/
 *.mp4
+!static/videos/*.mp4
 *.mp3
 *.wav
 

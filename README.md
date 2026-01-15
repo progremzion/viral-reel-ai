@@ -2,6 +2,10 @@
 
 > Transform any topic into viral-ready videos in minutes, not hours.
 
+<div align="center">
+  <img src="assets/img/viralreelai.png" alt="ViralReel AI Interface" width="800"/>
+</div>
+
 An AI-powered web application that automatically generates short-form videos for TikTok, Instagram Reels, and YouTube Shorts. Simply provide a topic, and ViralReel AI handles everything: script writing, voiceovers, visuals, and video assembly.
 
 ## ✨ Features
@@ -23,9 +27,26 @@ An AI-powered web application that automatically generates short-form videos for
 
 ## 🚀 Demo
 
-https://github.com/user-attachments/assets/your-demo-video-here
+### 📹 Sample Generated Video
 
-*(Add a demo video or GIF of your interface once you record one)*
+<div align="center">
+  <a href="static/videos/viralreel_20260115_073318_799977b2.mp4">
+    <img src="assets/img/viralreelai.png" alt="Click to view demo video" width="400"/>
+  </a>
+  <p><strong>👆 Click the image above to watch the demo video</strong></p>
+  <p><em>AI-generated vertical video ready for TikTok/Reels/Shorts</em></p>
+</div>
+
+**📥 [Download Demo Video](static/videos/viralreel_20260115_073318_799977b2.mp4)** (30MB) to see the full quality output!
+
+### How It Works
+
+1. **Enter a topic** - Type in your content idea (e.g., "The Future of AI")
+2. **AI generates script** - GPT-4o-mini creates a viral video script with multiple scenes
+3. **Voiceover creation** - Text-to-speech generates narration for each scene
+4. **Video generation** - RunwayML creates AI videos matching the script
+5. **Assembly** - MoviePy combines everything with captions into a final video
+6. **Download & Share** - Get your vertical video ready for TikTok, Reels, or Shorts!
 
 ## Tech Stack
 
